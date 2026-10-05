@@ -8,7 +8,7 @@ const celebrationScreen = document.getElementById("celebrationScreen");
 const musicLink = document.getElementById("musicLink");
 const sunoPlayer = document.getElementById("sunoPlayer");
 
-const SUNO_LINK = "https://suno.com/song/a4ecfe9b-9341-4a35-9ffd-ca4acc4c4912?sh=l8alpHdxuyVkNAqr";
+const SUNO_LINK = "https://suno.com/song/eccc56cc-1950-49ce-97b4-48aa2c525df9?sh=le4zUMwR7mTQ3pm4";
 
 // Al hacer clic, la celebración y el reproductor de Suno se activan juntos.
 // El navegador puede aplicar sus propias reglas de reproducción automática.
@@ -17,7 +17,7 @@ celebrateBtn.addEventListener("click", () => {
 
     // Reinicia el reproductor embebido para intentar iniciar la canción
     // después de la interacción del usuario.
-    sunoPlayer.src = "https://suno.com/embed/a4ecfe9b-9341-4a35-9ffd-ca4acc4c4912?autoplay=1";
+    sunoPlayer.src = "https://suno.com/embed/eccc56cc-1950-49ce-97b4-48aa2c525df9?autoplay=1";
 
     createConfetti(150);
     createHeartRain(35);

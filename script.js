@@ -9,7 +9,6 @@ const musicLink = document.getElementById("musicLink");
 const sunoPlayer = document.getElementById("sunoPlayer");
 
 const SUNO_LINK = "https://suno.com/song/eccc56cc-1950-49ce-97b4-48aa2c525df9?sh=le4zUMwR7mTQ3pm4";
-
 // Al hacer clic, la celebración y el reproductor de Suno se activan juntos.
 // El navegador puede aplicar sus propias reglas de reproducción automática.
 celebrateBtn.addEventListener("click", () => {

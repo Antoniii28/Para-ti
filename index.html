@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Feliz cumpleaños</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="scene"></canvas>
+
+    <!-- Pantalla principal: conserva la idea del corazón 3D de San Valentín,
+         pero ahora como decoración de cumpleaños. -->
+    <div class="container" id="mainUI">
+        <div class="content-wrapper">
+            <div class="title-box">
+                <h1>Feliz cumpleaños</h1>
+                <p>Una celebración especial para mi prima Yeni</p>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn-celebrate" id="celebrateBtn">Celebrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebración -->
+    <div class="celebration" id="celebrationScreen">
+        <div class="celebration-content">
+            <div class="photo-frame">
+                <img src="Imagen6.png" alt="Foto especial de Yeni">
+            </div>
+
+            <h2>¡Feliz cumpleaños!</h2>
+            <p class="special-message">Que tengas un día muy bonito, lleno de alegría y buenos momentos. 🎉</p>
+            <p class="cousin-message">Con cariño para mi prima Yeni ❤️</p>
+
+            <button class="music-link" id="musicLink">🎵 Abrir canción en Suno</button>
+        </div>
+    </div>
+
+    <!--
+        Suno proporciona un reproductor embebible para la canción.
+        Se activa al pulsar "Celebrar", que es una interacción del usuario.
+    -->
+    <iframe
+        id="sunoPlayer"
+        class="suno-player"
+        src="https://suno.com/embed/a4ecfe9b-9341-4a35-9ffd-ca4acc4c4912?autoplay=1"
+        title="Canción de cumpleaños en Suno"
+        allow="autoplay; encrypted-media"
+        loading="eager">
+    </iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
